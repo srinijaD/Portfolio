@@ -11,10 +11,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Mouli Namburu",
-  title: "Hi all, I'm Mouli Namburu",
+  username: "Srinija",
+  title: "Hi all, I'm Srinija",
   subTitle: emoji(
-    "A passionate  Software Developer 🚀 having experience in Mobile applications with Android Native "
+    "A passionate  Ux Developer/Designer  having 9+ years experience in designing UserInterface (UI) applications and professional web applications "
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -24,10 +24,10 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/namburumouli",
-  linkedin: "https://www.linkedin.com/in/namburu-mouli-267294158/",
-  gmail: "namburu.mouli@gmail.com",
-  medium: "https://medium.com/@namburu.mouli",
+  github: "",
+  linkedin: "https://www.linkedin.com/in/d-srinija-4965ab2b6/",
+  gmail: "dsrinija0708@gmail.com",
+  medium: "",
 
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -38,10 +38,10 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY UX DEVELOPER/DESIGNER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for mobile applications"
+      "Develop highly interactive and responsive UX design for  Web, Mobile and tablet applications."
     )
   ],
 
@@ -50,16 +50,20 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Android",
-      fontAwesomeClassname: "fab fa-android"
+      skillName: "UI/UX Developer ",
+      fontAwesomeClassname: "fab fa-figma"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "Angular JS",
+      fontAwesomeClassname: "fab fa-angular"
     },
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Xamarin",
-      fontAwesomeClassname: "fab fa-xamarin-"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -68,13 +72,13 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "GITAM University",
-      logo: require("./assets/images/logo_gitam.jpg"),
-      subHeader: "Bachelor of Technology in Electronics and Communication",
-      duration: "June 2015 - March 2019",
+      schoolName: "Madras University",
+      logo: require("./assets/images/madras_university.jpg"),
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "June 2015",
       desc: "",
       descBullets: [
        
@@ -89,16 +93,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
+      Stack: "UI/UX", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
-    // {
-    //   Stack: "Backend",
-    //   progressPercentage: "70%"
-    // },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend/Design ",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -110,15 +110,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Member Technical Engineer",
-      company: "HCL Technologies",
-      companylogo: require("./assets/images/HCLLogo.png"),
-      date: "Aug 2019 – Present",
-      desc: "Front-End Mobile Application Developer ",
+      role: "UI/UX Designer",
+      company: "Intuit, TX",
+      companylogo: "https://s3-us-west-1.amazonaws.com/upload.comparably.com/27415/companies/27415/logo_1661449324729.jpg",
+      date: "April 2022 – Present",
+      desc: "UI developer",
       descBullets: [
-        "My responsibilities include project planning, Development advance applications for Native Android platform and also Hybrid Applications using Xamarin platform .",
-        "Experience in Native Android Development and Hybrid Mobile Application in Xamarin.",
-        "Knowledge in Agile Methodology , MVC , MVVM Patterns, Clean Architecture ."
+        
+        
+      ]
+    }, {
+      role: "Senior UI/UX Designer", 
+      company: "Centene, MO",
+      companylogo:"https://s3-symbol-logo.tradingview.com/centene--600.png",
+      date: "July 2020 – Mar 2022",
+      desc: "UI/UX Designer",
+      descBullets: [
+        
+      ]
+    } ,{
+      role: "UI/UX Developer",
+      company: "Fannie Mae, GA ",
+      companylogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrUWnE_TCJ9MmMNapJz1UA900E2UXoivS8zQ&s",
+      date: "Oct 2018 – Jun 2020",
+      desc: "UI/UX Designer",
+      descBullets: [
+        
+      ]
+    },{
+      role: "UI/Web Developer",
+      company: "Wall Greens, Chicago ",
+      companylogo:"https://play-lh.googleusercontent.com/gK5U3QZnDLSysaBFcsiCOyknNRZpG669NmreEUvGqlamTQwafKoVTUVUoZ8rqdBzlMsw",
+      date: "Nov 2017 – Sep 2018",
+      desc: "UI/Web Developer",
+      descBullets: [
+        
       ]
     }
   ]
@@ -129,40 +155,73 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+ // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8crM9Le2c-myKKEKrwrTkpsizaa_uWjG78Q&s",
+      projectName: "tonesfashion",
+      projectDesc: "Ecommerce",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://www.tonesfashion.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: "https://www.agility.com/wp-content/uploads/2020/09/agility_logo_appicon.png",
+      projectName: "agility",
+      projectDesc: "ECommerce Supply Chain",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://www.agility.com/en/"
+        }
+      ]
+    },
+    {
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNvfVrwuDHT4-aV1AuLDNwHrvz_xpQ7MYkEA&s",
+      projectName: "healthfirst",
+      projectDesc: "health insurance",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://healthfirst.org/"
+        }
+      ]
+    },
+    {
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3mwYcUq9Ta9aE9rtrIpoqXptaqj8b8_S3g&s",
+      projectName: "semios",
+      projectDesc: "Next in Ag: Farming Made Simple",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://semios.com/"
+        }
+      ]
+    },
+    {
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ0wgBkx7uI_Kzitecmc_-9879i82gfPzOWA&s",
+      projectName: "showpad",
+      projectDesc: "Empower sellers. Build trust. Win deals.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.showpad.com/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true  // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -226,14 +285,14 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Ecommerce Ui Design",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Discover Your Next Favorite Find",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://medium.com/@namburu.mouli/ocr-using-microsoft-cognitive-services-vision-api-in-xamarin-forms-3b0f797f1076",
-      title: "OCR using Microsoft Cognitive Services (Vision API ) in Xamarin forms",
+      url: "https://www.figma.com/design/ZTBwAqQUQ87LHhjKd3lEu0/Shopy?node-id=1-216&t=WhLIrMzmQurhF4wV-0",
+      title: "Shopy",
       description:
         ""
     },
@@ -280,11 +339,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
     "",
-  number: "+91 8985370667",
-  email_address: "namburu.mouli@gmail.com"
+  number: "+1 (443) 543-6898",
+  email_address: "dsrinija0708@gmail.com"
 };
 
 // Twitter Section
